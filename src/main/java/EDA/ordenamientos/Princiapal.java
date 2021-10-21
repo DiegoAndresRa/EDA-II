@@ -12,31 +12,20 @@ import javax.swing.JOptionPane;
 public class Princiapal{
  
     public static void main(String[] args) {
-      
+        
         Scanner sn = new Scanner(System.in);
-        boolean salir = false;
+        int salir = 0;
         int opcion;
         String cadena;
-        String line;
  
         cadena = JOptionPane.showInputDialog("Escriba el nombre del archivo con terminación .txt: ");
-        try{
-            Scanner sc = new Scanner(new FileReader(cadena));
-            while (sc.hasNextLine()) {
-                line = sc.nextLine();
-                System.out.println(line.toString());
-            }
-            sc.close();
-            
-        }catch(FileNotFoundException e){
-            
-            System.out.println("Error: "+e.getMessage());
-        }
+        
+        
 
-        while (!salir) {
+        while (salir == 0) {
             System.out.println("");
             System.out.println("");
-            System.out.println("                  Proyecto 1                   ");
+            System.out.println("******************** Proyecto 1 ********************");
             System.out.println("");
             System.out.println("");
             
@@ -45,7 +34,6 @@ public class Princiapal{
             System.out.println("3. Radix");
             System.out.println("4. Salir");
  
-            try {
                 System.out.print("Escribe una de las opciones: ");
                 opcion = sn.nextInt();
  
@@ -58,17 +46,33 @@ public class Princiapal{
                         break;
                     case 3:
                         System.out.println("\n\nHas seleccionado Radix");
+                        RadixSort.radixExterno(cadena);
                         break;
                     case 4:
-                        salir = true;
+                        salir = 1;
                         break;
                     default:
                         System.out.println("Solo números entre 1 y 4");
                 }
-            } catch (Exception e) {
-                System.out.println("Debes insertar un número");
-                sn.next();
-            }
+            
         } 
     } 
+    
+    public static void LeerArchivo(String cadena){
+        String line;
+        try{
+            Scanner sc = new Scanner(new FileReader(cadena));
+            while (sc.hasNextLine()) {
+                line = sc.nextLine();
+                System.out.println(line);
+            }
+            sc.close();
+            
+        }catch(FileNotFoundException e){
+            
+            System.out.println("Error: "+e.getMessage());
+        }
+        
+    }
+   
 }

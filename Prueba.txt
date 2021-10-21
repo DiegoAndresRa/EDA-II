@@ -1,3 +1,20 @@
-Angel,Sanchez Isaac,318063774
-Diego,Ramirez Garcia,318063566
-Lupita,Martinez,318062790
+Luis, Gomez Lopez, 123454
+Luis Alberto, Gomez Lopez, 123456
+Alarcon, Rios Avila, 126590
+Lupita, Rios Avila, 126598
+Angel, Sanchez Isaac, 142356
+Lucian, Sanchez Isaac, 142359
+Paolo, Monte Negro, 142380
+Aroyo, Monte Negro, 142388
+Roman, Saldivar, 198077
+Estante, Saldivar, 198078
+Juan, Perez Gomez, 303030
+Juan, Perez Gomez, 303032
+Zapata, Andres Ramirez, 318061
+Zapata, Andres Ramirez, 318061
+Diego, Andres Ramirez, 318063
+Pablo, Bustamante Olivares, 656576
+Rances, Bustamante Olivares, 656578
+Yahairo, Mendez Rodriguez, 987651
+Yahairo, Mendez Rodriguez, 987651
+Jose, Mendez Rodriguez, 987652
